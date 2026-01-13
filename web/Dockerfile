@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.29.4-trixie
 
 RUN mkdir -p /home/LogFiles /opt/startup /home/site/wwwroot \
     && echo "root:Docker!" | chpasswd \
